@@ -1,0 +1,178 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{bib:Yee1966}
+\selectlanguageifdefined{english}
+\BibEmph{Yee,~K.} Numerical solution of initial boundary value problems
+  involving maxwell's equations in isotropic media~/ K.~Yee~//
+  \BibEmph{Antennas and Propagation, IEEE Transactions on}. "---
+\newblock 1966. "--- may. "---
+\newblock Vol.~14, no.~3. "---
+\newblock Pp.~302--307.
+
+\bibitem{bib:WikipediaFdtdArticle}
+\selectlanguageifdefined{russian}
+\BibEmph{Википедия}. Finite Difference Time Domain method~/ ~Википедия. "---
+\newblock http://en.wikipedia.org/wiki/FDTD.
+
+\bibitem{bib:TafloveBrodwin1975}
+\selectlanguageifdefined{english}
+\BibEmph{Taflove,~A.} Numerical solution of steady-state electromagnetic
+  scattering problems using the time-dependent maxwell's equations~/
+  A.~Taflove, M.~E.~Brodwin~// \BibEmph{Microwave Theory and Techniques, IEEE
+  Transactions on}. "---
+\newblock 1975. "--- aug. "---
+\newblock Vol.~23, no.~8. "---
+\newblock Pp.~623--630.
+
+\bibitem{bib:KunzLee1978part1}
+\selectlanguageifdefined{english}
+\BibEmph{Kunz,~K.} A three-dimensional finite-difference solution of the
+  external response of an aircraft to a complex transient em environment: Part
+  i --- the method and its implementation~/ K.~Kunz, K.-M.~Lee~//
+  \BibEmph{Electromagnetic Compatibility, IEEE Transactions on}. "---
+\newblock 1978. "--- may. "---
+\newblock Vol. EMC-20, no.~2. "---
+\newblock Pp.~328 --333.
+
+\bibitem{bib:KunzLee1978part2}
+\selectlanguageifdefined{english}
+\BibEmph{Kunz,~K.} A three-dimensional finite-difference solution of the
+  external response of an aircraft to a complex transient em environment: Part
+  ii --- comparison of predictions and measurements~/ K.~Kunz, K.-M.~Lee~//
+  \BibEmph{Electromagnetic Compatibility, IEEE Transactions on}. "---
+\newblock 1978. "--- may. "---
+\newblock Vol. EMC-20, no.~2. "---
+\newblock Pp.~333--341.
+
+\bibitem{bib:Taflove1980}
+\selectlanguageifdefined{english}
+\BibEmph{Taflove,~A.} Application of the finite-difference time-domain method
+  to sinusoidal steady-state electromagnetic-penetration problems~/
+  A.~Taflove~// \BibEmph{Electromagnetic Compatibility, IEEE Transactions on}.
+  "---
+\newblock 1980. "--- aug. "---
+\newblock Vol. EMC-22, no.~3. "---
+\newblock Pp.~191--202.
+
+\bibitem{bib:Mur1981}
+\selectlanguageifdefined{english}
+\BibEmph{Mur,~G.} Absorbing boundary conditions for the finite-difference
+  approximation of the time-domain electromagnetic-field equations~/ G.~Mur~//
+  \BibEmph{Electromagnetic Compatibility, IEEE Transactions on}. "---
+\newblock 1981. "--- nov. "---
+\newblock Vol. EMC-23, no.~4. "---
+\newblock Pp.~377--382.
+
+\bibitem{bib:Liao1984}
+\selectlanguageifdefined{english}
+\BibEmph{Liao,~Z.~P.} A transmitting boundary for transient wave analysis~/
+  Z.~P.~Liao, H.~L.~Wong, Y.~F.~Yuan~// \BibEmph{Scientia Sinica}. "---
+\newblock 1984. "---
+\newblock Vol.~27. "---
+\newblock P.~1063–1076.
+
+\bibitem{bib:Berenger1994}
+\selectlanguageifdefined{english}
+\BibEmph{Berenger,~J.-P.} A perfectly matched layer for the absorption of
+  electromagnetic waves~/ J.-P.~Berenger~// \BibEmph{Journal of Computational
+  Physics}. "---
+\newblock 1994. "---
+\newblock Vol. 114. "---
+\newblock P.~185–200.
+
+\bibitem{bib:Berenger1996}
+\selectlanguageifdefined{english}
+\BibEmph{Berenger,~J.-P.} Perfectly matched layer for the fdtd solution of
+  wave-structure interaction problems~/ J.-P.~Berenger~// \BibEmph{Antennas and
+  Propagation, IEEE Transactions on}. "---
+\newblock 1996. "--- jan. "---
+\newblock Vol.~44, no.~1. "---
+\newblock Pp.~110--117.
+
+\bibitem{bib:Taflove1995}
+\selectlanguageifdefined{english}
+\BibEmph{Taflove,~A.} Computational electrodynamics: the finite-difference
+  time-domain method~/ A.~Taflove. Antennas and Propagation Library. "---
+\newblock Artech House, 1995.
+
+\bibitem{bib:Davidson2005}
+\selectlanguageifdefined{english}
+\BibEmph{Davidson,~D.} Computational Electromagnetics For RF and Microwave
+  Engineering~/ D.~Davidson. "---
+\newblock Cambridge University Press, 2005.
+
+\bibitem{bib:PiketMay1994}
+\selectlanguageifdefined{english}
+\BibEmph{Piket-May,~M.} Fd-td modeling of digital signal propagation in 3-d
+  circuits with passive and active loads~/ M.~Piket-May, A.~Taflove,
+  J.~Baron~// \BibEmph{Microwave Theory and Techniques, IEEE Transactions on}.
+  "---
+\newblock 1994. "--- aug. "---
+\newblock Vol.~42, no.~8. "---
+\newblock Pp.~1514--1523.
+
+\bibitem{bib:Maloney1994}
+\selectlanguageifdefined{english}
+\BibEmph{Maloney,~J.} A simple fdtd model for transient excitation of antennas
+  by transmission lines~/ J.~Maloney, K.~Shlager, G.~Smith~// \BibEmph{Antennas
+  and Propagation, IEEE Transactions on}. "---
+\newblock 1994. "--- feb. "---
+\newblock Vol.~42, no.~2. "---
+\newblock Pp.~289--292.
+
+\bibitem{bib:Bogolyubov2006}
+\selectlanguageifdefined{russian}
+\BibEmph{Боголюбов,~А.~Н.} Численное моделирование двумерных фотонных
+  кристаллов~/ А.~Н.~Боголюбов, И.~А.~Буткарев, Ю.~С.~Дементьева~//
+  \BibEmph{Журнал радиоэлектроники}. "---
+\newblock 2006. "---
+\newblock {\cyr\textnumero}~11. "---
+\newblock {\cyr\CYRS.}~26--37.
+
+\bibitem{bib:Zelenin2006}
+\selectlanguageifdefined{russian}
+\BibEmph{Зеленин,~А.} Применение метода fdtd для вычисления электромагнитных
+  полей в~дальней зоне~/ А.~Зеленин~// \BibEmph{Технология ЭМС}. "---
+\newblock 2006. "--- apr.
+
+\bibitem{bib:Immoreev2002}
+\selectlanguageifdefined{english}
+\BibEmph{Immoreev,~I.~J.} Ultrawideband interference resistant system for
+  secure radio communication with high data rate~/ I.~J.~Immoreev,
+  A.~A.~Sudakov~// \BibEmph{ICCSC'02}. "---
+\newblock 2002.
+
+\bibitem{bib:Astanin1989}
+\selectlanguageifdefined{russian}
+\BibEmph{Астанин,~Л.~Ю.} Основы сверхширокополосных радиолокационных
+  измерений~/ Л.~Ю.~Астанин, А.~А.~Костылев. "---
+\newblock М.: Радио и Связь, 1989.
+
+\bibitem{bib:Aizenberg1985}
+\selectlanguageifdefined{russian}
+\BibEmph{Айзенберг,~Г.~З.} Коротковолновые антенны~/ Г.~З.~Айзенберг. "---
+\newblock М.: Радио и связь, 1985.
+
+\bibitem{bib:Karshenas2009}
+\selectlanguageifdefined{english}
+\BibEmph{Karshenas,~F.} Modified tem horn antenna for wideband applications~/
+  F.~Karshenas, A.~R.~Mallahzadeh, A.~Imani~// \BibEmph{XIII International
+  Symposium on Antenna Technology and Applied Electromagnetics}. "---
+\newblock 2009.
+
+\bibitem{bib:MescheryakovUnpublishedReport}
+\selectlanguageifdefined{russian}
+\BibEmph{Мещеряков,~И.~И.} Оценка возможности наведения электромагнитных
+  импульсных помех субнаносекундной длительности на~печатные элементы СВЧ
+  устройств с~использованием метода конечных разностей во~временной области~/
+  И.~И.~Мещеряков. "---
+\newblock Неопубликованный отчет.
+
+\end{thebibliography}

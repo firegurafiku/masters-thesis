@@ -1,0 +1,129 @@
+\documentclass[a4paper,14pt]{disser}
+
+\bibliographystyle{gost780u}
+%\biboptions{compress}
+
+
+\usepackage{mathtext}
+%\usepackage{cmap}
+% Русификация и utf-икация латеха
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+% Прочие пакеты и их настройки
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{wasysym}  % for \oiint
+
+\usepackage{graphicx}
+\graphicspath{{../}}
+
+\usepackage{verbatim}
+
+\usepackage{tabularx}
+\usepackage{multirow}
+
+\usepackage{listings}
+\lstloadlanguages{C++}
+\lstset{language=C++,
+        extendedchars=\true,
+		basicstyle=\ttfamily\fontsize{11pt}{11pt}\selectfont}
+
+\clubpenalty=10000
+\widowpenalty=10000
+
+\usepackage{geometry}
+\geometry{
+    left=2.5cm,
+    right=1.5cm,
+    top=1.5cm,
+    bottom=1.0cm,
+    footskip=1cm,
+    includefoot}
+
+\linespread{1.25}
+%\onespacing
+%\onehalfspacing
+
+\parindent=1.1cm
+
+\setcounter{tocdepth}{1}
+
+\usepackage{enumitem}
+\newlist{where}{itemize}{1}
+\newlist{chronology}{description}{1}
+\setenumerate{
+    leftmargin=\parindent,
+    topsep=0cm,
+    itemsep=0cm,
+    parsep=0cm,
+    partopsep=0cm}
+\setitemize{
+    label={--},
+    leftmargin=\parindent,
+    topsep=0cm,
+    itemsep=0cm,
+    parsep=0cm,
+    partopsep=0cm}
+\setdescription{
+    topsep=0cm,
+    leftmargin=\parindent,
+    itemsep=0cm,
+    parsep=0cm,
+    partopsep=0cm}
+\setlist[where]{
+    label=,
+    leftmargin=\parindent,
+    topsep=0cm,
+    itemsep=0cm,
+    parsep=0cm,
+    partopsep=0cm}
+\setlist[chronology]{
+    font=\normalfont,
+    leftmargin=2.0cm,
+    style=sameline,
+    topsep=0.35cm,
+    itemsep=0cm,
+    parsep=0cm,
+    partopsep=0cm}
+
+%\renewcommand\chapter\addsectionw
+
+%\usepackage{float}
+%\newfloat{floatequation}{p}{floatequation.aux}{
+
+\usepackage{calc}
+
+\usepackage{numprint}
+
+\allowdisplaybreaks
+
+\renewcommand\epsilon\varepsilon
+\renewcommand\le\leqslant
+\renewcommand\ge\geqslant
+
+\newcommand{\vect}[1]{\ensuremath{\vec{#1\mathstrut}}}
+
+%\DeclareMathOperator\div{div}
+\DeclareMathOperator\rot{rot}
+\DeclareMathOperator\grad{grad}
+
+\newcommand{\VSWR}{\text{КСВН}}
+
+\newcommand{\val}[1]{\numprint{#1}}
+\newcommand{\valu}[2]{\val{#1}\,\ensuremath{#2}}
+
+\newcommand\yee[3]{\left.#1\right|^{#2}_{#3}}
+\newcommand\Yee[3]{#1\Big|^{#2}_{#3}}
+\newcommand{\hanglimitsoperator}[4][c]{\text{\makebox[\widthof{$#2$}][#1]{ $#2^{#3}_{#4}$ }}}
+
+\newcommand\fyee[3]{\hanglimitsoperator[l]{\left.#1\right|}{#2}{#3}~~~}
+\newcommand\fYee[3]{\hanglimitsoperator[l]{#1\Big|}{#2}{#3}~~~}
+\newcommand\yeediff[5]{\frac{\yee{#1}{#2}{#3} - \yee{#1}{#2}{#4}}{\Delta{#5}}}
+%\int\flimits^A_B
+%\makebox[\widthof{\int}]\int\limits^A_B
+
+% That special are only for convenience of browsing with xdvi program.
+\special{papersize=\the\paperwidth,\the\paperheight}

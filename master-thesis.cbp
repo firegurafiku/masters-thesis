@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="master-thesis" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Draft">
+				<Option output="bin/Draft/MasterDimploma" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Draft/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Final">
+				<Option output="bin/Final/MasterDimploma" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Final/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="bibliography/fdtd-theory.bib" />
+		<Unit filename="graphics/Yee-cube.svg" />
+		<Unit filename="sources/@-preamble.tex" />
+		<Unit filename="sources/@-pretext.tex" />
+		<Unit filename="sources/@-specials.tex" />
+		<Unit filename="sources/abstract.tex" />
+		<Unit filename="sources/bibliography.tex" />
+		<Unit filename="sources/experiments-directional-pattern.tex" />
+		<Unit filename="sources/experiments-tem-horn-vswr.tex" />
+		<Unit filename="sources/experiments.tex" />
+		<Unit filename="sources/intro.tex" />
+		<Unit filename="sources/main.tex" />
+		<Unit filename="sources/summary.tex" />
+		<Unit filename="sources/table-of-contents.tex" />
+		<Unit filename="sources/theory-core-method.tex" />
+		<Unit filename="sources/theory-directional-patterns.tex" />
+		<Unit filename="sources/theory-far-field.tex" />
+		<Unit filename="sources/theory-grid-reduction.tex" />
+		<Unit filename="sources/theory-lumped-source.tex" />
+		<Unit filename="sources/theory-tfsf.tex" />
+		<Unit filename="sources/theory-vswr.tex" />
+		<Unit filename="sources/theory.tex" />
+		<Unit filename="sources/title-page.tex" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

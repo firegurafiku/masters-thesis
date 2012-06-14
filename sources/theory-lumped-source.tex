@@ -1,0 +1,77 @@
+%
+%
+%
+
+\section{Точечный резистивный источник напряжения}
+\label{div:LumpedSource}
+
+Возможность моделировать сосредоточенные элементы вводится как расширение
+основного метода~\cite{bib:Taflove1995,bib:Davidson2005,bib:PiketMay1994,
+bib:Maloney1994}. При этом границы применения метода существенно расширяются.
+В частности, точечный генератор напряжения с заданным внутренним сопротивлением
+оказывается весьма удобным для моделирования источников питания.
+
+Достоинством этого дополнения является то, что при его использовании вид базовых
+уравнений меняется весьма незначительно. Например,если источник ориентирован
+вдоль оси~$z$, то в системе уравнений Макселла~\eqref{eq:MaxwellEquations}
+изменится только одна составляющая векторного уравнения для ротора~$\vect{H}$:
+\begin{equation}
+    \label{eq:LumpedSource:MaxwellEquationsAmendment}
+    (\rot\vect{H})_z = \epsilon\frac{\partial{E_z}}{\partial{t}} +
+        \sigma E_z + \frac{I_L}{\Delta{x}\Delta{y}},
+\end{equation}
+где $I_L$ --- ток через источник.
+
+Подвернув уравнение~\eqref{eq:LumpedSource:MaxwellEquationsAmendment} действию
+разностной схемы~\eqref{eq:FiniteDifferenceScheme} и полагая~$\sigma=0$ получим
+следующую формулу:
+\begin{multline}
+    \label{eq:LumpedSource:FdtdEquationsAmendmentWithI}
+    \fYee{E_z}{n+1}{i,j,k} = \fYee{E_z}{n}{i,j,k} +
+        \frac{\Delta{t}}{\yee{\epsilon}{}{i,j,k}}
+        \left[
+            \frac{\yee{H_y}{n+1}{i,j,k}-\yee{H_y}{n+1}{i-1,j,k}}{\Delta{x}} -
+            \frac{\yee{H_x}{n+1}{i,j,k}-\yee{H_x}{n+1}{i,j-1,k}}{\Delta{y}}
+        \right] - \\ -
+        \frac{\yee{I_L}{n+1}{}\Delta{t}}
+             {\yee{\epsilon}{}{i,j,k}\Delta{x}\Delta{y}}.
+\end{multline}
+
+Согласно закону Ома, для рассматриваемого сосредоточенного генератора напряжения
+с внутренним сопротивлением $R$ будет иметь место равенство
+\begin{equation}
+    \label{eq:LumpedSource:OhmLaw}
+    \fYee{I_L}{n+1}{} = \frac{\Delta{z}}{2R}
+    \left(
+        \fYee{E_z}{n+1}{i,j,k} - \Yee{E_z}{n}{i,j,k}
+    \right) +
+    \frac{\yee{V_s}{n+1}{}}{R},
+\end{equation}
+где $V_s$ --- генерируемое источником напряжение.
+
+После подстановки~\eqref{eq:LumpedSource:OhmLaw}
+в~\eqref{eq:LumpedSource:FdtdEquationsAmendmentWithI} получим простое уравнение
+для~$E_z$:
+\begin{multline}
+    \label{eq:LumpedSource:FdtdEquationsAmendmentWithU}
+    \fYee{E_z}{n+1}{i,j,k} =
+        \fYee{C_E}{}{i,j,k}\fYee{E_z}{n}{i,j,k}~~+~~
+        \Yee{C_H}{}{i,j,k}
+        \left[
+            \frac{\yee{H_y}{n+1}{i,j,k}-\yee{H_y}{n+1}{i-1,j,k}}{\Delta{x}}
+        \right. - \\ -
+        \left.
+            \frac{\yee{H_x}{n+1}{i,j,k}-\yee{H_x}{n+1}{i,j-1,k}}{\Delta{y}} +
+            \frac{\yee{V_s}{n+1}{}}{R\Delta{x}\Delta{y}}
+        \right],
+\end{multline}
+где $C_E$ и~$C_H$ определяются по формулам:
+\begin{equation}
+    \newcommand\XA{\displaystyle
+        \frac{\Delta{t}}{\yee{\epsilon}{}{i,j,k}}}
+    \newcommand\XB{\displaystyle
+        \frac{\Delta{t}\Delta{z}}{2R\yee{\epsilon}{}{i,j,k}\Delta{x}\Delta{y}}}
+    % --
+    \fYee{C_E}{}{i,j,k} = \frac{1-\XB}{1+\XB}, \quad
+    \fYee{C_H}{}{i,j,k} = \frac{\XA}{1+\XB}.
+\end{equation}
