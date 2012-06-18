@@ -32,15 +32,18 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="bibliography/fdtd-theory.bib" />
+		<Unit filename="bibliography/hdf5.bib" />
 		<Unit filename="graphics/Yee-cube.svg" />
-		<Unit filename="sources/@-preamble.tex" />
-		<Unit filename="sources/@-pretext.tex" />
-		<Unit filename="sources/@-specials.tex" />
+		<Unit filename="sources/00-preamble.tex" />
+		<Unit filename="sources/00-pretext.tex" />
+		<Unit filename="sources/00-specials.tex" />
 		<Unit filename="sources/abstract.tex" />
 		<Unit filename="sources/bibliography.tex" />
 		<Unit filename="sources/experiments-directional-pattern.tex" />
 		<Unit filename="sources/experiments-tem-horn-vswr.tex" />
 		<Unit filename="sources/experiments.tex" />
+		<Unit filename="sources/implementation-file-format.tex" />
+		<Unit filename="sources/implementation.tex" />
 		<Unit filename="sources/intro.tex" />
 		<Unit filename="sources/main.tex" />
 		<Unit filename="sources/summary.tex" />

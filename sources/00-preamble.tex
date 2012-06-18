@@ -49,7 +49,9 @@
 
 \parindent=1.1cm
 
-\setcounter{tocdepth}{1}
+\usepackage{url}
+
+\setcounter{tocdepth}{2}
 
 \usepackage{enumitem}
 \newlist{where}{itemize}{1}
@@ -98,6 +100,12 @@
 
 \usepackage{numprint}
 
+\usepackage{underscore}
+
+
+\reversemarginpar
+
+
 \allowdisplaybreaks
 
 \renewcommand\epsilon\varepsilon
@@ -122,6 +130,9 @@
 \newcommand\fyee[3]{\hanglimitsoperator[l]{\left.#1\right|}{#2}{#3}~~~}
 \newcommand\fYee[3]{\hanglimitsoperator[l]{#1\Big|}{#2}{#3}~~~}
 \newcommand\yeediff[5]{\frac{\yee{#1}{#2}{#3} - \yee{#1}{#2}{#4}}{\Delta{#5}}}
+
+\newcommand\code[1]{\texttt{#1}}
+
 %\int\flimits^A_B
 %\makebox[\widthof{\int}]\int\limits^A_B
 
