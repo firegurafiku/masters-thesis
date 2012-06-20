@@ -15,26 +15,33 @@
 \begin{document}
     \input{sources/00-pretext}
 	\input{sources/title-page}
-    %\input{sources/00-abstract}
+    \input{sources/abstract}
 	\input{sources/table-of-contents}
+
 	\input{sources/intro}
+
 	\input{sources/theory}
 	\input{sources/theory-core-method}
 	\input{sources/theory-grid-reduction}
 	\input{sources/theory-lumped-source}
     \input{sources/theory-tfsf}
+    \input{sources/implementation-programs}
+    \input{sources/implementation-file-format}
 
-	\input{sources/theory-far-field}
-	\input{sources/theory-directional-patterns}
-	\input{sources/theory-vswr}
-
-	\input{sources/experiments}
+	%\input{sources/experiments}
+	\chapter{Коэффициент стоячей волны по напряжению TEM-рупорных антенн}
+	\input{sources/experiments-optimal-transition}
+	\input{sources/experiments-antenna-profiles}
 	\input{sources/experiments-tem-horn-vswr}
-	\input{sources/experiments-directional-pattern}
 
-	\input{sources/implementation}
-	\input{sources/implementation-file-format}
+    \chapter{Энергетические диаграммы направленности TEM-рупорных антенн}
+    \input{sources/theory-far-field}
+	\input{sources/theory-directional-patterns}
+	\input{sources/experiments-directional-pattern}
 
 	\input{sources/summary}
 	\input{sources/bibliography}
+
+    %\appendix
+	%\input{sources/A01-code-fragments.tex}
 \end{document}

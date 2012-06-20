@@ -1,0 +1,92 @@
+
+\section{Вывод уравнений профиля антенны}
+
+Получим выражения, описывающие профиль рупорных антенн с~экспоненциальным
+и~линейным раскрывами. Прежде всего введем систему прямоугольных координат.
+Пусть антенна расположена симметрично относительно оси~$O_x$ и~главное
+направление излучения антенны совпадает с~направлением этой оси, входу антенны
+соответствует координата $x=0$. Лепестки антенны расположены симметрично
+друг другу относительно плоскости $O_{xy}$. Тогда можем записать выражения для
+расстояния между лепестками:
+\begin{align}
+	\label{eq:AntennaProfiles:Linear}
+    H(x) &= H_0 + (H_R-H_0)\frac{x}{R}, && \text{(линейный раскрыв)} \\
+    \label{eq:AntennaProfiles:Exponential}
+    H(x) &= H_0 \exp
+    \left[
+        \left(\frac{x}{R}\right)^\alpha\ln\frac{H_R}{H_0}
+    \right] && \text{(экспоненциальный раскрыв~\cite{bib:Karshenas2009})}
+\end{align}
+
+\noindent
+В этих формулах:
+\begin{where}
+\item $H_0$ --- расстояние между лепестками в~начале раскрыва;
+\item $H_R$ --- расстояние между лепестками в~конце раскрыва;
+\item $R$ --- длина раскрыва антенны вдоль координаты~$x$.
+\end{where}
+
+\noindent
+Будем считать антенну длинной линией с~распределенными параметрами, фактически
+--- полосковой линией с~переменными шириной и~расстоянием между проводниками.
+В~\cite{bib:Aizenberg1985} показано, что уровень отражения входного сигнала
+в~длинной линии получается наименьшим, если ее волновое сопротивление изменяется
+в~пространстве по~экспоненциальному закону от~входного сопротивления антенны
+до~сопротивления нагрузки на~выходе антенны. Итак, волновое сопротивление антенн
+(с~обоими рассматриваемыми типами раскрыва) имеет вид:
+\begin{equation}
+    \label{eq:AntennaProfiles:HornWaveResistance}
+    Z(x) = Z_0 \exp
+    \left[
+        \left(\frac{Z_R}{Z_0}\right)
+        \frac{x}{R}
+    \right],
+\end{equation}
+где $Z_0$ --- входное сопротивление антенны, $Z_R$ --- сопротивление нагрузки,
+на~которую выполняется согласование.
+
+Теперь воспользуемся известным соотношением для волнового сопротивления
+полосковой линии:
+\begin{equation}
+    \label{eq:AntennaProfiles:MicrostripWaveResistance}
+    Z = \frac{H\zeta_0}{B},
+\end{equation}
+%
+\begin{where}
+\item $H$ --- расстояние между проводниками линии;
+\item $B$ --- ширина проводников;
+\item $\zeta_0=120\pi$ --- т.~н. волновое сопротивление вакуума.
+\end{where}
+
+\noindent
+В~нашей задаче $H$ и~$B$ не~являются постоянными, кроме того, нас интересует
+значение ширины лепестка антенны, поэтому выразим его из
+формулы~\eqref{eq:AntennaProfiles:MicrostripWaveResistance}:
+\begin{equation}
+    \label{eq:AntennaProfiles:WidthFromWaveResistance}
+    B(x) = \frac{H(x)\zeta_0}{Z(x)}.
+\end{equation}
+
+Подставляя~\eqref{eq:AntennaProfiles:Linear} и~\eqref{eq:AntennaProfiles:Exponential}
+в~\eqref{eq:AntennaProfiles:WidthFromWaveResistance}, получим после несложных
+преобразований окончательные выражения для ширины лепестков антенн:
+\begin{align}
+    % --
+    \label{eq:AntennaProfiles:LinearWidth}
+    B(x) &= \frac{\zeta_0}{Z_0}
+    \left[ H_0 + (H_R-H_0)\frac{x}{R} \right]
+    \exp\left[
+        -\frac{x}{R}\ln\frac{Z_R}{Z_0}
+    \right] & \text{(линейный)} \\
+    % --
+    \label{eq:AntennaProfiles:ExponentialWidth}
+    B(x) &= \frac{H_0\zeta_0}{Z_0}
+    \exp\left[
+        \left(\frac{x}{R}\right)^\alpha \ln\frac{H_R}{H_0} -
+        \frac{x}{R} \ln\frac{Z_R}{Z_0}
+    \right] & \text{(экспоненциальный)}
+\end{align}
+
+Это и~есть искомые профили антенн. Графики этих зависимостей при различных
+значениях параметра~$Z_R$ изображены на~рис.~\ref{fig:ProfileWidths}
+в~разделе~\ref{div:DirectionalPatternExperimentDescription}.

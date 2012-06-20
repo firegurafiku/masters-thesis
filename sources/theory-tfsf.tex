@@ -36,26 +36,6 @@ TF/SF ячейках для случая TEM-волны, распростран�
 стр.~\pageref{eq:Tfsf:BasicEquationsOnSeparatePage}, так как они слишком
 громоздки для того, чтобы приводить их полностью в тексте работы.
 
-Проведя обратное преобразование Фурье от~\eqref{eq:Tfsf:MainEquations}, найдем
-выражения для составляющих поля в дальней зоне во временной области:
-\begin{align*}
-    E_\theta(t) &= -\eta w_\theta(t) - u_\phi(t), \\
-    E_\phi(t)   &= -\eta w_\phi(t) + u_\theta(t), \\
-    E_r(t)      &= 0, \\
-    H_\theta(t) &= w_\phi(t) - \frac{u_\theta(t)}{\eta}, \\
-    H_\phi(t)   &= -w_\theta(t) + \frac{u_\phi(t)}{\eta}, \\
-    H_r(t)      &= 0,\\
-    \vect{w}(t) &=
-        \frac{1}{4\pi Rc} \frac{\partial}{\partial{t}}
-        \oint\vect{j}\left(\textstyle t+\frac{\vect{r}\vect{r'}-R}{c}\right)dS,\\
-    \vect{u}(t) &=
-        \frac{1}{4\pi Rc} \frac{\partial}{\partial{t}}
-        \oint\vect{m}\left(\textstyle t+\frac{\vect{r}\vect{r'}-R}{c}\right)dS,
-\end{align*}
-Здесь $\vect{w}$, $\vect{u}$ --- поверхностные элекстрический и магнитный токи
-во временной области.
-
-
 % --- Термоядерный пиздец на отдельной странице.
 \begin{figure}[p]
 \label{eq:Tfsf:BasicEquationsOnSeparatePage}
@@ -160,8 +140,8 @@ $K_\text{max}$ --- индексы границы TF/SF области в мас�
 
 %% --
 \begin{figure}
-\label{fig:Tfsf:SubdivisionExample}
 \centering
 \includegraphics[width=0.5\textwidth]{graphics/tfsf-subdivision-example}
 \caption{Пример разбиения расчетной области.}
+\label{fig:Tfsf:SubdivisionExample}
 \end{figure}

@@ -1,4 +1,4 @@
-\documentclass[a4paper,14pt]{disser}
+\documentclass[a4paper,14pt,master]{disser}
 
 \bibliographystyle{gost780u}
 %\biboptions{compress}
@@ -47,11 +47,13 @@
 %\onespacing
 %\onehalfspacing
 
+
+
 \parindent=1.1cm
 
 \usepackage{url}
 
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 
 \usepackage{enumitem}
 \newlist{where}{itemize}{1}
@@ -101,6 +103,7 @@
 \usepackage{numprint}
 
 \usepackage{underscore}
+\usepackage{listings}
 
 
 \reversemarginpar
@@ -109,10 +112,52 @@
 \allowdisplaybreaks
 
 \renewcommand\epsilon\varepsilon
+\renewcommand\phi\varphi
 \renewcommand\le\leqslant
 \renewcommand\ge\geqslant
 
 \newcommand{\vect}[1]{\ensuremath{\vec{#1\mathstrut}}}
+
+\makeatletter
+%%%
+\renewcommand\tocprethechapter{}
+\renewcommand\tocpostthechapter{.}
+\renewcommand\thechapteralign{}
+\renewcommand\thechapterfont{\normalfont\bfseries}
+\renewcommand\prethechapter{}
+\renewcommand\postthechapter{.}
+\renewcommand\tocchapterfont{\normalfont}
+\renewcommand\tocchapterfillfont{\normalfont}
+\renewcommand\tocchapternumfont{\normalfont}
+
+%\renewcommand\chapterindent{}
+\renewcommand\chapteralign{}
+\renewcommand\chapterfont{\bfseries}
+\renewcommand\beforechapter{}
+\renewcommand\afterchapter{\par\nobreak\vskip 20\p@}
+
+% Размер всех заголовков должен быть одинаковым.
+\renewcommand\sectionfont{\normalfont\bfseries}
+
+% Уберем дурацкие отступы после \paragraph и \subparagraрh.
+\renewcommand\afterparagraph{-1ex}
+\renewcommand\aftersubparagraph{-1ex}
+
+
+\newcommand\tocchapterindent{0em}
+\newcommand\tocchapternameindent{1.6em}
+
+\renewcommand\tocposttheappendix{.}
+
+%\renewcommand*\chapter{\clearpage\@startsection{chapter}{0}}
+\renewcommand\l@chapter{\@tocline{chapter}{0}}
+
+% Подписи к картинкам и таблицам должны быть того же размера, что
+% и основной текст.
+\renewcommand*\captionfont{\normalfont}
+\renewcommand*\captionlabelfont{\normalfont}
+
+\makeatother
 
 %\DeclareMathOperator\div{div}
 \DeclareMathOperator\rot{rot}

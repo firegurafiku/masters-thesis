@@ -37,12 +37,16 @@
 		<Unit filename="sources/00-preamble.tex" />
 		<Unit filename="sources/00-pretext.tex" />
 		<Unit filename="sources/00-specials.tex" />
+		<Unit filename="sources/A01-code-fragments.tex" />
 		<Unit filename="sources/abstract.tex" />
 		<Unit filename="sources/bibliography.tex" />
+		<Unit filename="sources/experiments-antenna-profiles.tex" />
 		<Unit filename="sources/experiments-directional-pattern.tex" />
+		<Unit filename="sources/experiments-optimal-transition.tex" />
 		<Unit filename="sources/experiments-tem-horn-vswr.tex" />
 		<Unit filename="sources/experiments.tex" />
 		<Unit filename="sources/implementation-file-format.tex" />
+		<Unit filename="sources/implementation-programs.tex" />
 		<Unit filename="sources/implementation.tex" />
 		<Unit filename="sources/intro.tex" />
 		<Unit filename="sources/main.tex" />

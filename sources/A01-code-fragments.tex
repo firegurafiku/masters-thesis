@@ -1,0 +1,31 @@
+
+\chapter{Ключевые фрагменты программного кода}
+
+Ниже приведем некоторые фрагменты кода, отвечающие как за сериализацию в целом,
+так и за работу непосредственно с форматом HDF~5 и использование
+библиотеки \code{libhdf5}. В приложении представлен только код, отвечающий
+за запись, т.~к. соответствующий код чтения во многом ему симметричен и может
+быть опущен без ущерба для восприятия общей картины. Кроме того, опущены
+реализации классов \code{HierarchyCrawler} и \code{SequentalWriter}, т.~к.
+реализация первого достаточно объемна, а реализация второго --- практически
+тривиальна.
+
+\singlespacing
+
+\subsubsection{HierarchyCrawler.h}
+\lstinputlisting[language=c++]{appendix/HierarchyCrawler.h}
+
+\subsubsection{SequentalWriter.h}
+\lstinputlisting[language=c++]{appendix/SequentalWriter.h}
+
+\subsubsection{HierarchyCrawlerImpl.h}
+\lstinputlisting[language=c++]{appendix/HierarchyCrawlerImpl.h}
+
+\subsubsection{SequentalWriterImpl.h}
+\lstinputlisting[language=c++]{appendix/SequentalWriterImpl.h}
+
+\subsubsection{HdfWriterImpl.h}
+\lstinputlisting[language=c++]{appendix/HdfWriterImpl.h}
+
+\subsubsection{HdfWriterImpl.cpp}
+\lstinputlisting[language=c++]{appendix/HdfWriterImpl.cpp}

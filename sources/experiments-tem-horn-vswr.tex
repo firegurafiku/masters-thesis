@@ -3,7 +3,7 @@
 %
 
 
-\section{Расчет КСВН TEM-рупорных антенн}
+\section{Расчет коэффициента стоячей волны}
 
 Для анализа уровня согласования антенны с фидерной линией удобно использовать
 зависимость коэффициента стоячей волны по напряжению (КСВН) от частоты в рабочем
@@ -49,53 +49,74 @@
 	\VSWR(f) = \frac{1+|\dot\Gamma(f)|}{1-|\dot\Gamma(f)|}.
 \end{align}
 
-Полученные в результате моделирования в программной реализации метода FDTD
+Параметры пространственной сетки и PML, изпользовавшиеся при моделировании,
+сведены в таблицу~\ref{tab:GridParameters}. Полученные в результате моделирования
+в программной реализации метода FDTD
 зависимости КСВН от частоты для трех исследуемых рупоров разной длины приведены
 на рис.~\ref{fig:HornAntennaVSWR}. Полученные значения граничной частоты
 сведены в таблицу~\ref{tab:ThresholdFrequency}.
 
 % --- Рисунок
 \begin{figure}[p]
-\label{fig:HornAntennaExitationSignal}
 \centering
 \includegraphics[width=0.7\textwidth]{graphics/tem-horn-vswr-signal}
 \caption{СШП импульс, возбуждающий антенну.}
+\label{fig:HornAntennaExitationSignal}
 \end{figure}
 
 % --- Рисунок
 \begin{figure}[p]
-\label{fig:HornAntennaExitationSignalSpectrum}
 \centering
 \includegraphics[width=0.7\textwidth]{graphics/tem-horn-vswr-signal-spectrum}
 \caption{Амплитудно-частотный спектр импульса на
          рис.~\eqref{fig:HornAntennaExitationSignal}.}
+\label{fig:HornAntennaExitationSignalSpectrum}
 \end{figure}
 
 
 % --- Рисунок
 \begin{figure}[p]
-\label{fig:HornAntennaEquivalentScheme}
 \centering
 \includegraphics[width=0.3\textwidth]{graphics/horn-equivalent-scheme}
 \caption{Эквивалентная схема для расчета волнового сопротивления
          антенны ($R_s=\valu{50}{Ом}$).}
+\label{fig:HornAntennaEquivalentScheme}
 \end{figure}
 
 % --- Рисунок
 \begin{figure}[p]
-\label{fig:HornAntennaVSWR}
 \centering
 \includegraphics[width=\textwidth]{graphics/horn-vswr}
 \caption{Зависимости КСВН от частоты для трех антенн различной длины:
          $R=\valu{150}{мм}$ (красный),
          $R=\valu{180}{мм}$ (зеленый)
        и~$R=\valu{200}{мм}$ (синий)}
+\label{fig:HornAntennaVSWR}
 \end{figure}
 
 % --- Таблица
 \begin{table}[tb]
-\label{tab:ThresholdFrequency}
+\caption{
+    Параметры пространственной сетки и PML, использованные при моделировании
+    TEM-рупорных антенн.}
+\label{tab:GridParameters}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{|C|C|C|C|C|}
+\hline
+    Координата & Шаг, мм & R, \% & Слоев $N$ & Параметр~$g$ \\
+\hline
+    $x$ & \val{0.50} & \val{0.01} & \val{8} & \val{2.8} \\
+    $y$ & \val{0.77} & \val{0.01} & \val{8} & \val{2.6} \\
+    $z$ & \val{0.20} & \val{0.01} & \val{8} & \val{31} \\
+\hline
+\end{tabularx}
+\end{table}
+
+% --- Таблица
+\begin{table}[tb]
 \caption{Расчетные значения граничной частоты для ТЕМ-рупоров.}
+\label{tab:ThresholdFrequency}
 
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \begin{tabularx}{\textwidth}{|l|C|C|C|}
