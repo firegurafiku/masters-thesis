@@ -136,6 +136,34 @@
 \newblock {\cyr\textnumero}~11. "---
 \newblock {\cyr\CYRS.}~26--37.
 
+\bibitem{bib:NcsaWebsite}
+\selectlanguageifdefined{english}
+\BibEmph{{{N}ational {C}enter for {S}upercomputing {A}pplications}}.
+  Официальный сайт. "---
+\newblock www.ncsa.illinois.edu.
+
+\bibitem{bib:HdfGroupWebsite}
+\selectlanguageifdefined{english}
+\BibEmph{{HDF Group}}. Официальный сайт. "---
+\newblock http://www.hdfgroup.org/HDF5.
+
+\bibitem{bib:Utf8WikipediaArticle}
+\selectlanguageifdefined{russian}
+\BibEmph{Википедия}. {UTF-8}. "---
+\newblock http://en.wikipedia.org/wiki/UTF-8.
+
+\bibitem{bib:Karshenas2009}
+\selectlanguageifdefined{english}
+\BibEmph{Karshenas,~F.} Modified {TEM} horn antenna for wideband applications~/
+  F.~Karshenas, A.~R.~Mallahzadeh, A.~Imani~// \BibEmph{XIII International
+  Symposium on Antenna Technology and Applied Electromagnetics}. "---
+\newblock 2009.
+
+\bibitem{bib:Aizenberg1985}
+\selectlanguageifdefined{russian}
+\BibEmph{Айзенберг,~Г.~З.} Коротковолновые антенны~/ Г.~З.~Айзенберг. "---
+\newblock М.: Радио и связь, 1985.
+
 \bibitem{bib:Zelenin2006}
 \selectlanguageifdefined{russian}
 \BibEmph{Зеленин,~А.} Применение метода {FDTD} для вычисления электромагнитных
@@ -153,8 +181,7 @@ A finite-difference time-domain near zone to far zone transformation~/
 
 \bibitem{bib:GodaraHandbook2002}
 \selectlanguageifdefined{english}
-\BibEmph{Godara,~L.~C.} Handbook of antennas in wireless communications~/
-  L.~C.~Godara. "---
+Handbook of antennas in wireless communications~/ Ed. by L.~C.~Godara. "---
 \newblock Boca Raton, London, New York, Washington: CRC Press, 2002.
 
 \bibitem{bib:Immoreev2002}
@@ -170,18 +197,6 @@ A finite-difference time-domain near zone to far zone transformation~/
   измерений~/ Л.~Ю.~Астанин, А.~А.~Костылев. "---
 \newblock М.: Радио и Связь, 1989.
 
-\bibitem{bib:Karshenas2009}
-\selectlanguageifdefined{english}
-\BibEmph{Karshenas,~F.} Modified {TEM} horn antenna for wideband applications~/
-  F.~Karshenas, A.~R.~Mallahzadeh, A.~Imani~// \BibEmph{XIII International
-  Symposium on Antenna Technology and Applied Electromagnetics}. "---
-\newblock 2009.
-
-\bibitem{bib:Aizenberg1985}
-\selectlanguageifdefined{russian}
-\BibEmph{Айзенберг,~Г.~З.} Коротковолновые антенны~/ Г.~З.~Айзенберг. "---
-\newblock М.: Радио и связь, 1985.
-
 \bibitem{bib:MescheryakovUnpublishedReport}
 \selectlanguageifdefined{russian}
 \BibEmph{Мещеряков,~И.~И.} Оценка возможности наведения электромагнитных
@@ -190,25 +205,24 @@ A finite-difference time-domain near zone to far zone transformation~/
   И.~И.~Мещеряков. "---
 \newblock Неопубликованный отчет.
 
-\bibitem{bib:Hdf5WikipediaArticle}
+\bibitem{bib:BobreshovKretov2011}
 \selectlanguageifdefined{russian}
-\BibEmph{Википедия}. {H}ierarchical {D}ata {F}ormat~/ ~Википедия. "---
-\newblock http://en.wikipedia.org/wiki/Hierarchical_Data_Format.
+Влияние величины волнового сопротивления у раскрыва {TEM}-рупора на
+  энергетические диаграммы направленности~/ А.~М.~Бобрешов, П.~А.~Кретов,
+  И.~И.~Мещеряков, Г.~К.~Усков~// Радиолокация, навигация, связь: {XVII}
+  Международная техническая конференция. "---
+\newblock г.~Воронеж, 2011. "---
+\newblock {\cyr\CYRS.}~2218--2224.
 
-\bibitem{bib:NcsaWebsite}
-\selectlanguageifdefined{english}
-\BibEmph{{N}ational {C}enter for~{S}upercomputing {A}pplications}. Официальный
-  сайт. "---
-\newblock www.ncsa.illinois.edu.
-
-\bibitem{bib:HdfGroupWebsite}
-\selectlanguageifdefined{english}
-\BibEmph{{G}roup,~H.} Официальный сайт. "---
-\newblock http://www.hdfgroup.org/HDF5.
-
-\bibitem{bib:Utf8WikipediaArticle}
+\bibitem{bib:BobreshovKretov2012}
 \selectlanguageifdefined{russian}
-\BibEmph{Википедия}. {UTF-8}~/ ~Википедия. "---
-\newblock http://en.wikipedia.org/wiki/UTF-8.
+Влияние величины волнового сопротивления у раскрыва {TEM}-рупора на характер
+  излучения сверхкоротких импульсов заданной формы~/ А.~М.~Бобрешов,
+  П.~А.~Кретов, И.~И.~Мещеряков, Г.~К.~Усков~// 67-я Российская конференция с
+  международным участием <<Научная сессия, посвященная Дню радио>>, RDC-2012.
+  "---
+\newblock г.~Москва, 2012. "---
+\newblock Научная сессия, посвященная Дню радио. "---
+\newblock {\cyr\CYRS.}~22--25.
 
 \end{thebibliography}
