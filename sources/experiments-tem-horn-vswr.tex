@@ -39,6 +39,32 @@
 где~$\dot{U}_A(f)$, $\dot{I}_A(f)$ --- преобразования Фурье от~$U(t)$, $I(t)$,
 соответственно.
 
+% --- Рисунок
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.3\textwidth]{graphics/horn-equivalent-scheme}
+\caption{Эквивалентная схема для расчета волнового сопротивления
+         антенны ($R_s=\valu{50}{Ом}$).}
+\label{fig:HornAntennaEquivalentScheme}
+\end{figure}
+
+% --- Рисунок
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.7\textwidth]{graphics/tem-horn-vswr-signal}
+\caption{СШП импульс, возбуждающий антенну.}
+\label{fig:HornAntennaExitationSignal}
+\end{figure}
+
+% --- Рисунок
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.7\textwidth]{graphics/tem-horn-vswr-signal-spectrum}
+\caption{Амплитудно-частотный спектр импульса на
+         рис.~\eqref{fig:HornAntennaExitationSignal}.}
+\label{fig:HornAntennaExitationSignalSpectrum}
+\end{figure}
+
 Далее по формулам~\eqref{eq:HornAntennaReflectionCoefficient}
 и~\eqref{eq:HornAntennaVSWR} рассчитывается коэффициент отражения антенны
 и КСВН соответственно.
@@ -59,33 +85,6 @@
 % --- Рисунок
 \begin{figure}[p]
 \centering
-\includegraphics[width=0.7\textwidth]{graphics/tem-horn-vswr-signal}
-\caption{СШП импульс, возбуждающий антенну.}
-\label{fig:HornAntennaExitationSignal}
-\end{figure}
-
-% --- Рисунок
-\begin{figure}[p]
-\centering
-\includegraphics[width=0.7\textwidth]{graphics/tem-horn-vswr-signal-spectrum}
-\caption{Амплитудно-частотный спектр импульса на
-         рис.~\eqref{fig:HornAntennaExitationSignal}.}
-\label{fig:HornAntennaExitationSignalSpectrum}
-\end{figure}
-
-
-% --- Рисунок
-\begin{figure}[p]
-\centering
-\includegraphics[width=0.3\textwidth]{graphics/horn-equivalent-scheme}
-\caption{Эквивалентная схема для расчета волнового сопротивления
-         антенны ($R_s=\valu{50}{Ом}$).}
-\label{fig:HornAntennaEquivalentScheme}
-\end{figure}
-
-% --- Рисунок
-\begin{figure}[p]
-\centering
 \includegraphics[width=\textwidth]{graphics/horn-vswr}
 \caption{Зависимости КСВН от частоты для трех антенн различной длины:
          $R=\valu{150}{мм}$ (красный),
@@ -95,7 +94,7 @@
 \end{figure}
 
 % --- Таблица
-\begin{table}[tb]
+\begin{table}[h]
 \caption{
     Параметры пространственной сетки и PML, использованные при моделировании
     TEM-рупорных антенн.}
@@ -114,7 +113,7 @@
 \end{table}
 
 % --- Таблица
-\begin{table}[tb]
+\begin{table}[h]
 \caption{Расчетные значения граничной частоты для ТЕМ-рупоров.}
 \label{tab:ThresholdFrequency}
 
